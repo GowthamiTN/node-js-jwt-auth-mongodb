@@ -3,8 +3,7 @@ const mongoose=require('mongoose');
 const cors=require('cors');
 const db=require("./app/models");
 const dbConfig = require('./app/config/db.config');
-const Role = require("./app/models/role.model")
-console.log("Role",Role);
+const Role = db.ROLES
 const app=express();
 app.use(cors(corsoptions));
 app.use(express.json());
